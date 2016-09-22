@@ -1,0 +1,15 @@
+:backends:
+  - json
+  - yaml
+
+:hierarchy:
+  - "%{::domain}/%{::hostname}"
+  - "%{::fqdn}"
+  - "%{::hostname}"
+  - "common"
+
+:yaml:
+  :datadir: /vagrant/puppet/hieradata
+
+:json:
+  :datadir: /vagrant/puppet/hieradata
